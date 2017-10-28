@@ -1,4 +1,5 @@
 # grub2-theme-dablwibu
+DArkBLueWIthBUbbles
 A minimalistic, yet beautiful grub2 theme
 
 ![Screenshot](https://github.com/Thoma5/grub2-theme-dablwibu/blob/master/screenshot.png?raw=true)
