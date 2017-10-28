@@ -1,0 +1,77 @@
+title-text: ""
+title-font: "DejaVu Sans Regular 48"
+message-font: "DejaVu Sans Regular 16"
+message-color: "#7f8c8d"
+message-bg-color: "#4d4d4d"
+desktop-color: "#000000"
+desktop-image: "background.png"
+terminal-font: "DejaVu Sans Mono Regular 12"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
++ label {
+    top = 20%
+    height = 35
+    left = 0%
+    width = 100%
+    text = "Welcome!"
+    align = "center"
+    font = "DejaVu Sans Regular 48"
+    color = "#ffffff"
+}
+
++ boot_menu {
+    left = 50%-300
+    width = 600
+    top = 50%-125
+    height = 300
+    item_height = 33
+    item_padding = 2
+    icon_width = 32
+    icon_height = 32
+    item_icon_space = 20
+    item_spacing = 3
+    item_font =  "DejaVu Sans Regular 16"
+    item_color = "#cccccc"
+    selected_item_font = "DejaVu Sans Bold 16"
+    selected_item_color = "#ffffff"
+    selected_item_pixmap_style = "select_*.png"
+}
+
++ vbox {
+    left = 50%-300
+    top = 80% 
+    width = 600 
+    + label { width = 600 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[↵] Boot selected OS" }
+    + label { width = 600 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[↑ and ↓ Key] Navigation" }
+    + label { width = 600 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[E] Edit Selection" }
+    + label { width = 600 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[C] GRUB Commandline" }
+}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 0
+    top = 100%-32
+    width = 100%
+    height = 32
+    show_text = false
+    bar_style = "progress_bar_*.png"
+    highlight_style = "progress_bar_hl_*.png"
+}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 50%-300
+    top = 70%
+    width = 600
+    height = 20
+    show_text = true
+    font = "DejaVu Sans Regular 14"
+    text_color = "#7f8c8d"
+    align = "center"
+    text = "@TIMEOUT_NOTIFICATION_MIDDLE@"
+    bar_style = "progress_bar2_*.png"
+}
