@@ -24,16 +24,16 @@ terminal-border: "0"
 }
 
 + boot_menu {
-    left = 50%-300
-    width = 600
+    left = 50%-125
+    width = 250
     top = 50%-125
     height = 300
     item_height = 33
-    item_padding = 2
+    item_padding = 5
     icon_width = 32
     icon_height = 32
     item_icon_space = 20
-    item_spacing = 3
+    item_spacing = 5
     item_font =  "DejaVu Sans Regular 16"
     item_color = "#cccccc"
     selected_item_font = "DejaVu Sans Bold 16"
@@ -42,13 +42,13 @@ terminal-border: "0"
 }
 
 + vbox {
-    left = 50%-300
+    left = 50%-125
     top = 80% 
-    width = 600 
-    + label { width = 600 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[↵] Boot selected OS" }
-    + label { width = 600 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[↑ and ↓ Key] Navigation" }
-    + label { width = 600 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[E] Edit Selection" }
-    + label { width = 600 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[C] GRUB Commandline" }
+    width = 250
+    + label { width = 250 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[↵] Boot selected OS" }
+    + label { width = 250 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[↑ and ↓ Key] Navigation" }
+    + label { width = 250 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[E] Edit Selection" }
+    + label { width = 250 height = 16 align = "center" color = "#ffffff" font = "DejaVu Sans Regular 14" text = "[C] GRUB Commandline" }
 }
 
 + progress_bar {
@@ -64,14 +64,14 @@ terminal-border: "0"
 
 + progress_bar {
     id = "__timeout__"
-    left = 50%-300
+    left = 50%-125
     top = 70%
-    width = 600
+    width = 250
     height = 20
     show_text = true
     font = "DejaVu Sans Regular 14"
     text_color = "#7f8c8d"
     align = "center"
-    text = "@TIMEOUT_NOTIFICATION_MIDDLE@"
+    text = "@TIMEOUT_NOTIFICATION_SHORT@"
     bar_style = "progress_bar2_*.png"
 }
