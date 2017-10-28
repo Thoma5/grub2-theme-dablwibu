@@ -18,4 +18,5 @@ It shouldn't be too hard to find matching one yourself ;)
 https://github.com/KDE/breeze-grub
 ## Inspired by
 https://github.com/Se7endAY/grub2-theme-vimix
+
 https://github.com/shvchk/poly-light
