@@ -1,5 +1,7 @@
 # grub2-theme-dablwibu
 A minimalistic, yet beautiful grub2 theme
+
+![Screenshot](https://github.com/Thoma5/grub2-theme-dablwibu/blob/master/screenshot.png?raw=true)
 ## Installation
 Create an new folder in your grub theme folder (e.g. /boot/grub/themes/dablwibu/) where you put in all the content of this repository. You may have to chown it to root:root. 
 In your /etc/default/grub you have to set the following line:
